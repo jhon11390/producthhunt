@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'products#index'
+  
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  
   resources :users, only: [:new, :create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # get '/products', to: 'products#index'
@@ -9,5 +14,5 @@ Rails.application.routes.draw do
   # patch '/products/:id', to: 'products#update'
   # delete '/products/:id', to: 'products#destroy'
   resources :products
-  root 'products#index'
+  
 end
