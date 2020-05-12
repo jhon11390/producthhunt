@@ -23,6 +23,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'gravatar-ultimate'
 gem 'xmlrpc'
 gem 'annotate'
+gem "paperclip", "~> 6.0.0"
+gem 'aws-sdk', '~> 3'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
