@@ -27,9 +27,9 @@
           <h2>Comentarios</h2>
 
           <% @product.comments.each do |comment| %>
-            <div class="panel panel-default">
-              <header class="panel-heading"><img src="<%= Gravatar.new("#{comment.user.email}").image_url %>" class="img-circle" /> <%= comment.user.name %></header>
-              <div class="panel-body"><%= comment.body %></div>
+            <div class="card mb-3">
+              <header class="card-header"><img src="<%= Gravatar.new("#{comment.user.email}").image_url %>" class="img-circle" /> <%= comment.user.name %></header>
+              <div class="card-body"><%= comment.body %></div>
             </div>
           <% end %>
 
